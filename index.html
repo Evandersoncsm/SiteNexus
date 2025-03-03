@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mantém o site adaptável a qualquer tela e evita zoom excessivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Nexus Soluções & Tecnologia</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://i.imgur.com/9HZ7fW2.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://i.imgur.com/9HZ7fW2.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://i.imgur.com/9HZ7fW2.jpeg"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/9HZ7fW2.jpeg" />
+    <link rel="manifest" href="https://i.imgur.com/9HZ7fW2.jpeg" />
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="prism.css" rel="stylesheet" />
+    <link href="theme.css" rel="stylesheet" />
+    <link href="css/user.css" rel="stylesheet" />
+
+    <!-- ===============================================-->
+    <!--    CSS extra para ajustes no mobile e rolagem-->
+    <!-- ===============================================-->
+    <style>
+      /* Remove possível rolagem horizontal */
+      html, body {
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Ajustes de responsividade para telas menores que 768px */
+      @media (max-width: 768px) {
+        /* Deixa títulos menores em telas muito estreitas */
+        .display-2 {
+          font-size: 2rem !important;
+        }
+        .fs-2 {
+          font-size: 1.2rem !important;
+        }
+
+        /* Esconde o texto do telefone na navbar (para não quebrar linha) */
+        nav .text-light.fs-0.fw-normal {
+          display: none;
+        }
+
+        /* Ajuste de margens no form do topo */
+        .hero-header-form {
+          margin-top: 2rem;
+        }
+
+        /* Ajuste no tamanho do logo da navbar em telas pequenas */
+        .navbar-brand {
+          font-size: 1.5rem !important;
+        }
+
+        /* Botões e links menores para caber melhor */
+        .btn-ensurance {
+          font-size: 0.875rem !important;
+          padding: 0.75rem 1rem;
+        }
+        .hero-header-form form button {
+          padding: 0.75rem 1rem;
+          font-size: 0.875rem;
+        }
+
+        /* Ícones das tabs menores e centralizados */
+        .nav.flex-row.flex-md-column.nav-tab {
+          justify-content: center !important;
+        }
+        .nav.flex-row.flex-md-column.nav-tab .nav-link {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto 1rem auto; /* espaço entre os ícones */
+        }
+        .icon-box {
+          margin: 0 auto;
+        }
+
+        /* Ajuste de imagens de ícones em "Melhores Serviços" */
+        .shadow-icon {
+          height: 50px;
+        }
+
+        /* Ajuste de espaços nas seções que tenham muito padding */
+        section {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+
+        /* Deixa o logo do "Fale Conosco" menor no mobile */
+        .logo-footer.fs-7 {
+          font-size: 1.8rem !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <!-- ============================================-->
+      <!-- NAVBAR-->
+      <!-- ============================================-->
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <!-- Somente "tech" em azul, e "solutions" permanece com a cor padrão -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary fs-3 ms-2 fw-bolder">NexuS</span
+            ><span class="fs-3 fw-bolder ms-0 text-100">olutions</span>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse pt-4 pt-lg-0" id="navbarSupportedContent">
+            <p class="mb-0 ms-auto text-light fs-0 fw-normal">
+              <i class="fas fa-phone-alt me-2"></i>Ligue agora
+              <a class="text-light" href="tel:+2153624579">+55 11 95746-1222</a>
+            </p>
+            <ul
+              class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
+            >
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#services">Serviços</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#news">Notícias &amp; Blog</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact">Contato</a>
+              </li>
+            </ul>
+            <div class="d-flex mt-2 align-items-center mt-lg-0">
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm d-flex mx-2"
+                  id="dropdownMenuButton1"
+                  type="submit"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search text-primary"></i>
+                </button>
+                <div
+                  class="dropdown-menu dropdown-menu-lg-end p-0 rounded"
+                  aria-labelledby="dropdownMenuButton1"
+                  style="top: 55px"
+                >
+                  <form>
+                    <input
+                      class="form-control form-search-control border-100"
+                      type="search"
+                      placeholder="Buscar"
+                      aria-label="Search"
+                    />
+                  </form>
+                </div>
+              </div>
+              <a href="#!">
+                <i class="fas fa-user text-primary"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
+
+
+      <!-- ============================================-->
+      <!-- HERO -->
+      <!-- ============================================-->
+      <section class="py-0">
+        <div
+          class="bg-holder"
+          style="
+            background-image: url(assets/img/illustrations/bg.png);
+            background-position: left center;
+            background-size: auto 816px;
+          "
+        ></div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-md-7 col-xl-7 pt-9 text-md-start text-center">
+              <h1 class="display-2 text-light fw-thin">
+                Nós fornecemos as melhores
+                <br class="d-none d-xl-block" />
+                soluções de <strong class="fw-bolder">tecnologia</strong>
+              </h1>
+              <p class="fs-2 text-400">
+                Soluções simples para otimizar processos e alcançar
+                <br class="d-none d-xxl-block" />
+                resultados incríveis no seu negócio
+              </p>
+              <!-- Botão redirecionando para #contact -->
+              <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                <span class="btn-text">Saiba mais</span>
+              </a>
+            </div>
+            <div class="col-md-5 col-xl-5 pe-xxl-0">
+              <div class="card card-bg shadow hero-header-form">
+                <div class="card-body p-4 p-xl-6">
+                  <h2 class="text-100 text-center">Solicite uma Cotação</h2>
+                  <!-- Adicionamos um ID aqui para capturar via JS -->
+                  <form class="mb-3" id="headerForm">
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control input-box form-ensurance-header-control"
+                        id="floatingName"
+                        type="text"
+                        placeholder="Nome"
+                      />
+                      <label for="floatingName">Seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control input-box form-ensurance-header-control"
+                        id="floatingPhone"
+                        type="tel"
+                        placeholder="Telefone"
+                      />
+                      <label for="floatingPhone">Telefone</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control input-box form-ensurance-header-control"
+                        id="floatingEmail"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <label for="floatingEmail">Email</label>
+                    </div>
+
+                    <!-- NOVO SELECT COM OPÇÕES DE SERVIÇO -->
+                    <div class="form-floating mb-3">
+                      <select
+                        class="form-select input-box form-ensurance-header-control"
+                        id="floatingCategory"
+                        aria-label="Selecione uma categoria"
+                      >
+                        <option value="" disabled selected>Escolha uma categoria</option>
+                        <option value="Implantação de ERP">Implantação de ERP</option>
+                        <option value="Integração de Sistemas">Integração de Sistemas</option>
+                        <option value="Automações">Automações</option>
+                        <option value="Desenvolvimento de Software">
+                          Desenvolvimento de Software
+                        </option>
+                      </select>
+                      <label for="floatingCategory">Categoria de serviço</label>
+                    </div>
+                    <!-- FIM NOVO SELECT -->
+
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control input-box form-ensurance-header-control"
+                        id="floatingTextarea"
+                        placeholder="Deixe seus comentários aqui"
+                      ></textarea>
+                      <label for="floatingTextarea">Comentários</label>
+                    </div>
+                    <div class="col-12 d-grid">
+                      <button class="btn btn-primary rounded-pill" type="submit">
+                        Enviar Solicitação
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END HERO -->
+
+
+      <!-- ============================================-->
+      <!-- SERVICES -->
+      <!-- ============================================-->
+      <section id="services">
+        <div
+          class="bg-holder d-none d-md-block"
+          style="
+            background-image: url(assets/img/illustrations/bg-car-insurance.png);
+            background-position: 0 200px;
+            background-size: 100% 45%;
+          "
+        ></div>
+        <!--/.bg-holder-->
+
+        <div
+          class="bg-holder d-none d-md-block"
+          style="
+            background-image: url(assets/img/illustrations/bg-left.png);
+            background-position: left;
+            background-size: 15% 100%;
+          "
+        ></div>
+        <!--/.bg-holder-->
+
+        <div
+          class="bg-holder d-none d-xl-block mt-11"
+          style="
+            background-image: url(assets/img/illustrations/circle.png);
+            background-position: 18% 49%;
+            background-size: auto;
+          "
+        ></div>
+        <!--/.bg-holder-->
+
+        <div class="container-lg">
+          <div class="row flex-center py-8 py-md-10">
+            <div class="col-12 mt-6">
+              <div class="d-flex align-items-start flex-column flex-md-row">
+                <!-- Tab Navigation -->
+                <div
+                  class="nav flex-row flex-md-column nav-tab mb-4 mb-md-0"
+                  id="nav-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <!-- 1) Implantação de ERP -->
+                  <a
+                    class="circle-hover-wrapper nav-link mb-md-4 active"
+                    id="nav-erp-tab"
+                    href="#!"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-erp"
+                    role="tab"
+                    aria-controls="nav-erp"
+                    aria-selected="true"
+                  >
+                    <div class="icon-box">
+                      <i class="fas fa-cogs fa-2x text-primary"></i>
+                    </div>
+                  </a>
+
+                  <!-- 2) Integração de Sistemas -->
+                  <a
+                    class="circle-hover-wrapper nav-link mb-md-4"
+                    id="nav-integracao-tab"
+                    href="#!"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-integracao"
+                    role="tab"
+                    aria-controls="nav-integracao"
+                    aria-selected="false"
+                  >
+                    <div class="icon-box">
+                      <i class="fas fa-exchange-alt fa-2x text-primary"></i>
+                    </div>
+                  </a>
+
+                  <!-- 3) Automações -->
+                  <a
+                    class="circle-hover-wrapper nav-link mb-md-4"
+                    id="nav-automacoes-tab"
+                    href="#!"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-automacoes"
+                    role="tab"
+                    aria-controls="nav-automacoes"
+                    aria-selected="false"
+                  >
+                    <div class="icon-box">
+                      <i class="fas fa-robot fa-2x text-primary"></i>
+                    </div>
+                  </a>
+
+                  <!-- 4) Desenvolvimento de Software -->
+                  <a
+                    class="circle-hover-wrapper nav-link"
+                    id="nav-dev-tab"
+                    href="#!"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-dev"
+                    role="tab"
+                    aria-controls="nav-dev"
+                    aria-selected="false"
+                  >
+                    <div class="icon-box">
+                      <i class="fas fa-code fa-2x text-primary"></i>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Nav -->
+
+                <!-- Tab Content -->
+                <div class="tab-content w-100" id="nav-tabContent">
+                  <!-- IMPLANTAÇÃO DE SOFTWARE ERP -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-erp"
+                    role="tabpanel"
+                    aria-labelledby="nav-erp-tab"
+                  >
+                    <div class="row align-items-center offset-sm-1 g-3">
+                      <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                        <h2 class="text-light mb-md-5">Implantação de Software ERP</h2>
+                        <p class="text-400">
+                          Tenha controle total do seu negócio com sistemas ERP de ponta,
+                          garantindo eficiência, melhor gestão de recursos e processos
+                          totalmente integrados.
+                        </p>
+                        <p class="text-400 mt-3">
+                          Oferecemos consultoria e suporte para uma implantação rápida e
+                          assertiva.
+                        </p>
+                        <!-- Botão redirecionando para #contact -->
+                        <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                          <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                          <span class="btn-text">Saiba mais</span>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-xl-8 text-end">
+                        <div class="img-shape">
+                          <img
+                            class="feature-img img-fluid"
+                            src="https://media.licdn.com/dms/image/v2/D4D12AQGV-64VepwI2Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1731433074218?e=2147483647&v=beta&t=cTTlse1FYASQFC-mPd1zL9Pw2SfogCPkq2TGefOK3Is"
+                            alt="ERP"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- INTEGRAÇÃO DE SISTEMAS -->
+                  <div
+                    class="tab-pane fade"
+                    id="nav-integracao"
+                    role="tabpanel"
+                    aria-labelledby="nav-integracao-tab"
+                  >
+                    <div class="row align-items-center offset-sm-1 g-3">
+                      <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                        <h2 class="text-light mb-md-5">Integração de Sistemas</h2>
+                        <p class="text-400">
+                          Otimize o fluxo de informações conectando diferentes plataformas e
+                          aplicativos. Elimine retrabalhos e redundâncias, garantindo maior
+                          eficiência no dia a dia.
+                        </p>
+                        <p class="text-400 mt-3">
+                          Unifique dados e facilite a comunicação entre equipes e softwares.
+                        </p>
+                        <!-- Botão redirecionando para #contact -->
+                        <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                          <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                          <span class="btn-text">Saiba mais</span>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-xl-8 text-end">
+                        <div class="img-shape">
+                          <img
+                            class="feature-img img-fluid"
+                            src="https://blog.consistem.com.br/wp-content/uploads/2022/08/6-principais-etapas-de-implantacao-de-um-erp.jpg"
+                            alt="Integracao"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- AUTOMAÇÕES -->
+                  <div
+                    class="tab-pane fade"
+                    id="nav-automacoes"
+                    role="tabpanel"
+                    aria-labelledby="nav-automacoes-tab"
+                  >
+                    <div class="row align-items-center offset-sm-1 g-3">
+                      <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                        <h2 class="text-light mb-md-5">Automações</h2>
+                        <p class="text-400">
+                          Agilize processos repetitivos e reduza falhas humanas. Nossas
+                          soluções de automação ajudam sua empresa a ganhar tempo, produtividade
+                          e eficiência operacional.
+                        </p>
+                        <p class="text-400 mt-3">
+                          Descubra como a automação pode revolucionar o dia a dia da sua equipe.
+                        </p>
+                        <!-- Botão redirecionando para #contact -->
+                        <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                          <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                          <span class="btn-text">Saiba mais</span>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-xl-8 text-end">
+                        <div class="img-shape">
+                          <img
+                            class="feature-img img-fluid"
+                            src="https://themanufacturer-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2020/01/14113254/By-adopting-Robotic-Process-Automation-RPA-manufacturers-can-reduce-human-errors-and-increase-productivity-image-courtesy-of-Atos.png"
+                            alt="Automacao"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- DESENVOLVIMENTO DE SOFTWARE -->
+                  <div
+                    class="tab-pane fade"
+                    id="nav-dev"
+                    role="tabpanel"
+                    aria-labelledby="nav-dev-tab"
+                  >
+                    <div class="row align-items-center offset-sm-1 g-3">
+                      <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                        <h2 class="text-light mb-md-5">Desenvolvimento de Software</h2>
+                        <p class="text-400">
+                          Crie soluções personalizadas para as necessidades específicas do seu
+                          negócio. Oferecemos desenvolvimento de software sob medida, desde
+                          aplicações web até sistemas complexos.
+                        </p>
+                        <p class="text-400 mt-3">
+                          Garanta escalabilidade, segurança e alto desempenho em cada projeto.
+                        </p>
+                        <!-- Botão redirecionando para #contact -->
+                        <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                          <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                          <span class="btn-text">Saiba mais</span>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-xl-8 text-end">
+                        <div class="img-shape">
+                          <img
+                            class="feature-img img-fluid"
+                            src="https://www.monitoratec.com.br/blog/wp-content/uploads/2020/08/AdobeStock_310133736-740x416.jpeg"
+                            alt="DevSoftware"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END TABS -->
+                </div>
+                <!-- End Tab Content -->
+              </div>
+            </div>
+          </div>
+
+          <!-- BEST SERVICES (opcional) -->
+          <div class="row offset-xl-2">
+            <div class="col-12">
+              <div class="mb-3 mb-md-5">
+                <h2 class="text-light mb-7 text-center text-sm-start">Melhores Serviços</h2>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="assets/img/icons/support.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Suporte 24/7</h4>
+                  <p class="text-400 mb-md-0">
+                    Nosso cliente é sempre <br />
+                    nossa prioridade
+                  </p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="assets/img/icons/edit.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Implantação Fácil</h4>
+                  <p class="text-400 mb-md-0">
+                    Expresse seus requisitos <br />
+                    e nós cuidamos do resto
+                  </p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="assets/img/icons/money.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Pagamentos Flexíveis</h4>
+                  <p class="text-400 mb-md-0">
+                    Rápido, seguro e simples. Escolha diversas formas de pagamento
+                  </p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
+                  <img
+                    class="shadow-icon"
+                    src="assets/img/icons/security.png"
+                    height="60"
+                    alt="..."
+                  />
+                  <h4 class="mt-4 fw-normal text-200">Segurança Avançada</h4>
+                  <p class="text-400 mb-md-0">
+                    Garantimos a proteção dos seus <br />
+                    dados e informações
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SERVICES -->
+
+
+      <!-- ============================================-->
+      <!-- SEÇÃO: TECNOLOGIAS QUE UTILIZAMOS -->
+      <!-- ============================================-->
+      <section id="tecnologias" class="py-5">
+        <div class="container">
+          <h2 class="text-light text-center mb-5">Tecnologias que Utilizamos</h2>
+          <p class="text-400 text-center mb-5">
+            Aqui estão algumas das principais tecnologias e frameworks que adotamos em nossos
+            projetos para garantir performance, segurança e escalabilidade.
+          </p>
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+              <img
+                src="https://openwhisk.apache.org/images/runtimes/logo-java-text-color.svg"
+                alt="React"
+                class="img-fluid"
+                style="max-height:60px;"
+              />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+              <img
+                src="https://media.licdn.com/dms/image/D4D12AQEZVXWqTQ0fTg/article-cover_image-shrink_600_2000/0/1689632891005?e=2147483647&v=beta&t=94hc36EFMRLigCpv9xi7WHsKQank4OPvyf9l7C_5kDY"
+                alt="Node.js"
+                class="img-fluid"
+                style="max-height:60px;"
+              />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:336/0*rmv6pZTW2hfP2XYd.png"
+                alt="Docker"
+                class="img-fluid"
+                style="max-height:60px;"
+              />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+              <img
+                src="https://lginfo.com.br/site/wp-content/uploads/2023/10/Python-Symbol.png"
+                alt="Python"
+                class="img-fluid"
+                style="max-height:60px;"
+              />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                alt="AWS"
+                class="img-fluid"
+                style="max-height:60px;"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM TECNOLOGIAS -->
+
+
+      <!-- ============================================-->
+      <!-- Fundadores -->
+      <!-- ============================================-->
+      <section class="py-8">
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+            <div class="col-12 col-xxl-11 offset-xxl-1">
+              <h2 class="text-light text-center">Nossos Fundadores</h2>
+              <div
+                class="carousel slide"
+                id="carouselExampleIndicators"
+                data-bs-ride="carouse"
+              >
+                <div class="carousel-inner ps-md-5 ps-lg-11 py-4 py-md-5 py-lg-4 pb-lg-9">
+                  <!-- ITEM 1 -->
+                  <div class="carousel-item active">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <div
+                          class="card testimonial-bg card-span text-white mt-10 mt-md-7 mt-lg-8 mx-4 mx-md-0"
+                        >
+                          <div class="card-body pt-0 p-md-0">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                              <div class="card-span-img">
+                                <div class="circle-wrapper">
+                                  <img
+                                    class="rounded-circle w-100"
+                                    src="https://media.licdn.com/dms/image/v2/C4E03AQFenU1kPyWvHA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1647437613896?e=1746662400&v=beta&t=RioQ-BUMY685pGF_pbdaJ9Y3Te-gKTYfMMBAB0f2fWE"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10"
+                              >
+                                <h4 class="mb-0 fw-medium text-white">Gabriel Correia</h4>
+                                <p class="fw-normal mb-0 text-primary">CEO</p>
+                                <p class="card-text text-200 mt-3">
+                                  “Especialista em Gestão de Projetos e Implantação de Sistemas.”
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ITEM 2 -->
+                  <div class="carousel-item">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <div
+                          class="card testimonial-bg card-span text-white mt-10 mt-md-7 mt-lg-8 mx-4 mx-md-0"
+                        >
+                          <div class="card-body pt-0 p-md-0">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                              <div class="card-span-img">
+                                <div class="circle-wrapper">
+                                  <img
+                                    class="rounded-circle w-100"
+                                    src="https://i.imgur.com/ljUhPUH.jpeg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10"
+                              >
+                                <h4 class="mb-0 fw-medium text-white">Evanderson Silva</h4>
+                                <p class="fw-normal mb-0 text-primary">Co-Fundador</p>
+                                <p class="card-text text-200 mt-3">
+                                  “Especialista em Engenharia de Software, IA e Machine Learning”
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <div
+                  class="row justify-content-center justify-content-xl-end me-auto mt-xl-n7 pe-xl-8"
+                >
+                  <div class="col-2 text-end position-relative z-index-2">
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                    </button>
+                    <div class="carousel-indicators">
+                      <button
+                        class="active"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Carousel controls -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END TESTIMONIALS -->
+
+
+      <!-- ============================================-->
+      <!-- RECENT NEWS -->
+      <!-- ============================================-->
+      <section id="news">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-light text-center my-5">Notícias Recentes</h2>
+          </div>
+          <div class="row flex-center h-100 circle-blend circle-blend-left circle-primary">
+            <div class="col-12">
+              <div
+                class="row align-items-center circle-blend circle-blend-right circle-warning"
+              >
+                <!-- Blog Card 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="card p-3 h-100 card-soft-primary">
+                    <div class="card-body">
+                      <div class="d-flex flex-between-center">
+                        <p class="fw-normal mb-0 text-400">24 Julho, 2025</p>
+                        <h6>
+                          <span
+                            class="badge rounded-pill text-primary"
+                            style="background: #224E8F"
+                            >Inovações</span
+                          >
+                        </h6>
+                      </div>
+                      <h5 class="fw-bold fs-2 text-200 my-3">
+                        Tendências em Computação em Nuvem
+                      </h5>
+                      <p class="text-400">
+                        Conheça as principais tendências de cloud computing que estão
+                        mudando a forma de trabalhar das empresas em todo o mundo...
+                      </p>
+                      <a class="link-primary" href="#!">
+                        <svg
+                          class="bi bi-arrow-right text-primary"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="21"
+                          fill="currentColor"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 
+                            0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 
+                            0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="card p-3 h-100 card-soft-primary">
+                    <div class="card-body">
+                      <div class="d-flex flex-between-center">
+                        <p class="fw-normal mb-0 text-400">29 Julho, 2025</p>
+                        <h6>
+                          <span
+                            class="badge rounded-pill text-primary"
+                            style="background: #224E8F"
+                            >Segurança</span
+                          >
+                        </h6>
+                      </div>
+                      <h5 class="fw-bold fs-2 text-200 my-3">
+                        Como Proteger Sua Empresa de Ameaças Digitais
+                      </h5>
+                      <p class="text-400">
+                        A segurança cibernética é cada vez mais essencial. Entenda as
+                        ferramentas e práticas para manter sua empresa a salvo...
+                      </p>
+                      <a class="link-primary" href="#!">
+                        <svg
+                          class="bi bi-arrow-right text-primary"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="21"
+                          fill="currentColor"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 
+                            0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 
+                            0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="card p-3 h-100 card-soft-primary">
+                    <div class="card-body">
+                      <div class="d-flex flex-between-center">
+                        <p class="fw-normal mb-0 text-400">15 Agosto, 2025</p>
+                        <h6>
+                          <span
+                            class="badge rounded-pill text-primary"
+                            style="background: #224E8F"
+                            >IA</span
+                          >
+                        </h6>
+                      </div>
+                      <h5 class="fw-bold fs-2 text-200 my-3">
+                        Inteligência Artificial: O Futuro Chegou
+                      </h5>
+                      <p class="text-400">
+                        A adoção de IA está crescendo em ritmo acelerado. Veja como a
+                        Inteligência Artificial pode impulsionar a inovação na sua empresa...
+                      </p>
+                      <a class="link-primary" href="#!">
+                        <svg
+                          class="bi bi-arrow-right text-primary"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="21"
+                          fill="currentColor"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 
+                            0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 
+                            0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-5 text-center text-sm-end">
+                <a class="link-primary" href="#!">
+                  Ver todas
+                  <svg
+                    class="bi bi-arrow-right"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 
+                      0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 
+                      0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END RECENT NEWS -->
+
+
+      <!-- ============================================-->
+      <!-- PARTNERS -->
+      <!-- ============================================-->
+      <section class="py-0">
+        <div class="container">
+          <div class="row align-items-center justify-content-xl-between">
+            <h2 class="text-light text-center my-5">Parceiros</h2>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start">
+              <img
+                src="https://vancecontabil.com.br/wp-content/uploads/2021/06/logo-bling-png-1.png"
+                height="40"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start">
+              <img
+                src="https://media.treasy.com.br/media/2024/06/omie-logo-768x234.png"
+                height="40"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start">
+              <img
+                src="https://d3hw41hpah8tvx.cloudfront.net/images/logo_ecossistema_66f532e37b.svg"
+                height="40"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/03/Locaweb-novo_logo.png"
+                height="40"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start">
+              <img
+                src="https://logodownload.org/wp-content/uploads/2016/08/mercado-livre-logo-8.png"
+                height="40"
+                alt="Partner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PARTNERS -->
+
+
+      <!-- ============================================-->
+      <!-- CONTACT + MAPA LADO A LADO-->
+      <!-- ============================================-->
+      <section id="contact" class="mt-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-light text-center mb-5">Fale Conosco</h2>
+          </div>
+          <div class="row align-items-start">
+            <!-- Coluna 1: Informações de contato -->
+            <div class="col-12 col-md-6 mb-4 order-0 order-md-0">
+              <!-- Aqui, no mobile, será reduzido pelo @media (ver .logo-footer.fs-7) -->
+              <a class="logo-footer fs-7" href="index.html">
+                <span class="text-primary fw-bolder">NexuS</span
+                ><span class="fw-bolder ms-0 text-300">olutions and Tecnology</span>
+              </a>
+              <p class="text-light my-4">
+                <i class="fas fa-map-marker-alt me-3"></i>
+                <span class="text-light"
+                  >Av. Brig. Faria Lima, 2369 - Conj 1102 - Jardim Paulistano, São Paulo -
+                  SP, 01452-922&nbsp;</span
+                >
+                <a class="text-light" href="tel:+604-680-9785"><br>+55 11 95746-1222</a><br />
+              </p>
+              <p class="text-light">
+                <i class="fas fa-envelope me-3 text-primary"></i>
+                <a href="mailto:vctung@outlook.com">nexussolucoesti@gmail.com</a>
+              </p>
+              <p class="text-light">
+                <i class="fas fa-phone-alt me-3 text-primary"></i>
+                <a href="tel:1-800-800-2299">11 99484-2804 (Suporte)</a>
+              </p>
+            </div>
+            <!-- Coluna 2: Mapa -->
+            <div class="col-12 col-md-6 order-1 order-md-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.3352474125802!2d-46.6866329042661!3d-23.577291466380583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57a79b9be4a7%3A0x27a0854885f3ca93!2sNexus%20Solu%C3%A7%C3%B5es%20%26%20Tecnologia!5e1!3m2!1spt-BR!2sbr!4v1741019844573!5m2!1spt-BR!2sbr"
+                style="width: 100%; height: 300px; border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM CONTATO + MAPA LADO A LADO-->
+
+
+      <!-- ============================================-->
+      <!-- FOOTER MELHORADO -->
+      <!-- ============================================-->
+      <footer class="py-5 bg-black text-light">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Coluna 1: Sobre -->
+            <div class="col-12 col-md-4">
+              <!-- Aqui também, apenas "tech" em azul -->
+              <h5><span class="text-primary">Sobre nós</span></h5>
+              <p class="text-400">
+                Somos uma empresa especializada em soluções tecnológicas para otimizar
+                processos, reduzir custos e melhorar a eficiência dos nossos clientes.
+              </p>
+              <p class="text-400 mb-0">
+                Trabalhamos para entregar qualidade, segurança e resultados que transformam
+                negócios.
+              </p>
+            </div>
+            <!-- Coluna 2: Links Rápidos -->
+            <div class="col-12 col-md-4">
+              <h5 class="fw-bold mb-3">Links Rápidos</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-light text-decoration-none" href="#">Início</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-light text-decoration-none" href="#services">Serviços</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-light text-decoration-none" href="#news">Notícias &amp; Blog</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-light text-decoration-none" href="#contact">Contato</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Coluna 3: Redes Sociais -->
+            <div class="col-12 col-md-4">
+              <h5 class="fw-bold mb-3">Conecte-se Conosco</h5>
+              <p class="text-400">
+                Siga nossas redes sociais e fique por dentro das novidades em tecnologia e
+                soluções corporativas.
+              </p>
+              <ul class="list-unstyled list-inline my-3">
+                <li class="list-inline-item">
+                  <a class="text-decoration-none" href="#!"
+                    ><i class="fab fa-facebook-square fa-2x social-icons"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-decoration-none" href="#!"
+                    ><i class="fab fa-instagram fa-2x social-icons"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-decoration-none" href="#!"
+                    ><i class="fab fa-twitter-square fa-2x social-icons"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-decoration-none" href="#!"
+                    ><i class="fab fa-linkedin fa-2x social-icons"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="bg-secondary mt-5" />
+          <div class="row">
+            <div class="col-12 text-center text-md-start">
+              <p class="fs--1 my-2 fw-light text-200 mb-0">
+                Todos os direitos reservados &copy; <span class="text-primary">NexuS</span>olutions and Tecnology,
+                2025.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FIM FOOTER MELHORADO -->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ============================================-->
+    <!-- BOTÃO DE WHATSAPP FLUTUANTE -->
+    <!-- ============================================-->
+    <!-- Número de telefone fixo para +55 11 95746-1222 -->
+    <a
+      href="https://wa.me/5511957461222?text=Ol%C3%A1%2C%20techsolutions%21%20Preciso%20de%20uma%20ajuda."
+      class="whatsapp-button"
+      target="_blank"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        text-decoration: none;
+      "
+      title="Fale conosco pelo WhatsApp"
+    >
+      <i class="fab fa-whatsapp fa-3x" style="color: #25D366;"></i>
+    </a>
+    <!-- FIM BOTÃO DE WHATSAPP -->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/anchorjs/anchor.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/prism/prism.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- SCRIPT para enviar dados do form ao WhatsApp -->
+    <script>
+      // Número fixo do WhatsApp
+      const WHATSAPP_NUMBER = "5511957461222";
+
+      // Intercepta o submit do formulário
+      document.getElementById("headerForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Evita envio tradicional
+
+        // Captura os valores
+        const name = document.getElementById("floatingName").value;
+        const phone = document.getElementById("floatingPhone").value;
+        const email = document.getElementById("floatingEmail").value;
+        const category = document.getElementById("floatingCategory").value;
+        const comments = document.getElementById("floatingTextarea").value;
+
+        // Monta a mensagem
+        let message = "Olá, gostaria de solicitar uma cotação:\n";
+        message += "---------------------------\n";
+        message += `*Nome:* ${name}\n`;
+        message += `*Telefone:* ${phone}\n`;
+        message += `*Email:* ${email}\n`;
+        message += `*Categoria de serviço:* ${category}\n`;
+        message += `*Comentários:* ${comments}\n`;
+        message += "---------------------------\n";
+        message += "Aguardo retorno. Obrigado!";
+
+        // Codifica para URL
+        const encodedMessage = encodeURIComponent(message);
+
+        // Link do WhatsApp (com o número fixo)
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+        // Abre em uma nova guia
+        window.open(whatsappURL, "_blank");
+      });
+    </script>
+  </body>
+</html>
