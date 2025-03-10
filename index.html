@@ -152,7 +152,6 @@
       >
         <div class="container">
           <!-- Logo -->
-          <!-- Somente "tech" em azul, e "solutions" permanece com a cor padrão -->
           <a class="navbar-brand" href="index.html">
             <span class="text-primary fs-3 ms-2 fw-bolder">NexuS</span
             ><span class="fs-3 fw-bolder ms-0 text-100">olutions</span>
@@ -378,8 +377,11 @@
         <!--/.bg-holder-->
 
         <div class="container-lg">
-          <h2 class="text-light text-center mb-5">Nossos Serviços</h2>
-          <div class="row flex-center py-8 py-md-10">
+          <!-- Ajuste de margens no título -->
+          <h2 class="text-light text-center mb-3">Nossos Serviços</h2>
+
+          <!-- Redução do espaçamento na área abaixo do título -->
+          <div class="row flex-center py-3 py-md-5">
             <div class="col-12 mt-6">
               <div class="d-flex align-items-start flex-column flex-md-row">
                 <!-- Tab Navigation -->
@@ -648,7 +650,12 @@
                   </p>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
-                  <img class="shadow-icon" src="security.png" height="60" alt="..." />
+                  <img
+                    class="shadow-icon"
+                    src="security.png"
+                    height="60"
+                    alt="..."
+                  />
                   <h4 class="mt-4 fw-normal text-200">Segurança Avançada</h4>
                   <p class="text-400 mb-md-0">
                     Garantimos a proteção dos seus <br />
@@ -1042,39 +1049,49 @@
       <!-- ============================================-->
       <section class="py-0">
         <div class="container">
-          <!-- Agora deixamos o título em uma linha separada -->
           <h2 class="text-light text-center my-5">Parceiros</h2>
-          <!-- E criamos outra row só para os ícones, com as classes de centralização -->
-          <div class="row align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start">
+          <div
+            class="row align-items-center justify-content-center justify-content-xl-between"
+          >
+            <div
+              class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start"
+            >
               <img
                 src="https://vancecontabil.com.br/wp-content/uploads/2021/06/logo-bling-png-1.png"
                 height="40"
                 alt="Partner"
               />
             </div>
-            <div class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start">
+            <div
+              class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start"
+            >
               <img
                 src="https://media.treasy.com.br/media/2024/06/omie-logo-768x234.png"
                 height="40"
                 alt="Partner"
               />
             </div>
-            <div class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start">
+            <div
+              class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start"
+            >
               <img
                 src="https://d3hw41hpah8tvx.cloudfront.net/images/logo_ecossistema_66f532e37b.svg"
                 height="40"
                 alt="Partner"
               />
             </div>
-            <div class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start">
+            <div
+              class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start"
+            >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/03/Locaweb-novo_logo.png"
                 height="40"
                 alt="Partner"
               />
             </div>
-            <div class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start">
+            <div
+              class="col-auto col-md-4 col-lg-auto my-3 text-center text-md-start"
+            >
               <img
                 src="https://logodownload.org/wp-content/uploads/2016/08/mercado-livre-logo-8.png"
                 height="40"
@@ -1097,7 +1114,6 @@
           <div class="row align-items-start">
             <!-- Coluna 1: Informações de contato -->
             <div class="col-12 col-md-6 mb-4 order-0 order-md-0">
-              <!-- Aqui, no mobile, será reduzido pelo @media (ver .logo-footer.fs-7) -->
               <a class="logo-footer fs-7" href="index.html">
                 <span class="text-primary fw-bolder">NexuS</span
                 ><span class="fw-bolder ms-0 text-300"
@@ -1146,8 +1162,8 @@
           <div class="row gy-4">
             <!-- Coluna 1: Sobre -->
             <div class="col-12 col-md-4">
-              <!-- Aqui também, apenas "tech" em azul -->
-              <h5><span class="text-primary">Sobre nós</span></h5>
+              <!-- Título renomeado -->
+              <h5 class="mb-3"><span class="text-primary">Sobre a NexuS</span></h5>
               <p class="text-400">
                 Somos uma empresa especializada em soluções tecnológicas para
                 otimizar processos, reduzir custos e melhorar a eficiência dos
@@ -1163,21 +1179,23 @@
               <h5 class="fw-bold mb-3">Links Rápidos</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a class="text-light text-decoration-none" href="#">Início</a>
+                  <a class="text-light text-decoration-none" href="#"
+                    ><i class="fas fa-chevron-right me-2"></i>Início</a
+                  >
                 </li>
                 <li class="mb-2">
                   <a class="text-light text-decoration-none" href="#services"
-                    >Serviços</a
+                    ><i class="fas fa-chevron-right me-2"></i>Serviços</a
                   >
                 </li>
                 <li class="mb-2">
                   <a class="text-light text-decoration-none" href="#news"
-                    >Notícias &amp; Blog</a
+                    ><i class="fas fa-chevron-right me-2"></i>Notícias &amp; Blog</a
                   >
                 </li>
                 <li class="mb-2">
                   <a class="text-light text-decoration-none" href="#contact"
-                    >Contato</a
+                    ><i class="fas fa-chevron-right me-2"></i>Contato</a
                   >
                 </li>
               </ul>
@@ -1234,7 +1252,6 @@
     <!-- ============================================-->
     <!-- BOTÃO DE WHATSAPP FLUTUANTE -->
     <!-- ============================================-->
-    <!-- Número de telefone fixo para +55 11 95746-1222 -->
     <a
       href="https://wa.me/5511957461222?text=Ol%C3%A1%2C%20techsolutions%21%20Preciso%20de%20uma%20ajuda."
       class="whatsapp-button"
