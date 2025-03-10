@@ -106,17 +106,19 @@
           font-size: 0.875rem;
         }
 
-        /* Ícones das tabs menores e centralizados */
+        /* IMPORTANTE: Ajuste para exibir TODOS os 4 ícones de serviço numa única linha */
         .nav.flex-row.flex-md-column.nav-tab {
+          flex-direction: row !important;
+          flex-wrap: nowrap !important;
+          overflow-x: auto; /* permite rolagem horizontal no mobile */
+          /* ALINHAMENTO CENTRALIZADO NO MOBILE: */
           justify-content: center !important;
+          align-items: center !important;
         }
         .nav.flex-row.flex-md-column.nav-tab .nav-link {
-          display: flex;
-          justify-content: center;
-          margin: 0 auto 1rem auto; /* espaço entre os ícones */
-        }
-        .icon-box {
-          margin: 0 auto;
+          flex: 0 0 auto; /* cada botão com largura automática */
+          /* ALTERADO: reduzido de 15px para 8px */
+          margin-right: 8px; /* espaçamento entre ícones reduzido */
         }
 
         /* Ajuste de imagens de ícones em "Melhores Serviços" */
@@ -684,7 +686,7 @@
             <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
               <img
                 src="https://openwhisk.apache.org/images/runtimes/logo-java-text-color.svg"
-                alt="React"
+                alt="Java"
                 class="img-fluid"
                 style="max-height:60px;"
               />
