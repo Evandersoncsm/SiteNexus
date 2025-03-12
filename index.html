@@ -73,12 +73,13 @@
 
       /* Ajustes de responsividade para telas menores que 768px */
       @media (max-width: 768px) {
-        /* Deixa títulos menores em telas muito estreitas */
+        /* Títulos menores em telas muito estreitas */
         .display-2 {
-          font-size: 2rem !important;
+          font-size: 1.9rem !important; /* Ajuste sutil */
+          line-height: 1.2;
         }
         .fs-2 {
-          font-size: 1.2rem !important;
+          font-size: 1.1rem !important;
         }
 
         /* Esconde o texto do telefone na navbar (para não quebrar linha) */
@@ -93,7 +94,7 @@
 
         /* Ajuste no tamanho do logo da navbar em telas pequenas */
         .navbar-brand {
-          font-size: 1.5rem !important;
+          font-size: 1.4rem !important;
         }
 
         /* Botões e links menores para caber melhor */
@@ -106,19 +107,17 @@
           font-size: 0.875rem;
         }
 
-        /* IMPORTANTE: Ajuste para exibir TODOS os 4 ícones de serviço numa única linha */
+        /* Ajuste para exibir TODOS os 4 ícones de serviço numa única linha e deixá-los mais próximos e à esquerda no mobile */
         .nav.flex-row.flex-md-column.nav-tab {
           flex-direction: row !important;
           flex-wrap: nowrap !important;
           overflow-x: auto; /* permite rolagem horizontal no mobile */
-          /* ALINHAMENTO CENTRALIZADO NO MOBILE: */
-          justify-content: center !important;
-          align-items: center !important;
+          justify-content: flex-start !important; /* Alinhados à esquerda */
+          align-items: flex-start !important;
         }
         .nav.flex-row.flex-md-column.nav-tab .nav-link {
-          flex: 0 0 auto; /* cada botão com largura automática */
-          /* ALTERADO: reduzido de 15px para 8px */
-          margin-right: 8px; /* espaçamento entre ícones reduzido */
+          flex: 0 0 auto;
+          margin-right: 5px; /* Espaçamento reduzido entre os botões */
         }
 
         /* Ajuste de imagens de ícones em "Melhores Serviços" */
@@ -135,6 +134,11 @@
         /* Deixa o logo do "Fale Conosco" menor no mobile */
         .logo-footer.fs-7 {
           font-size: 1.8rem !important;
+        }
+
+        /* Pequenos ajustes em cards do Blog para não ficar muito apertado */
+        .card.p-3.h-100.card-soft-primary {
+          padding: 1rem !important;
         }
       }
     </style>
@@ -183,9 +187,7 @@
               class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
             >
               <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Início</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
               </li>
               <li class="nav-item px-2">
                 <a class="nav-link" href="#services">Serviços</a>
@@ -619,7 +621,7 @@
             </div>
           </div>
 
-          <!-- BEST SERVICES (opcional) -->
+          <!-- BEST SERVICES (Vantagens) -->
           <div class="row offset-xl-2">
             <div class="col-12">
               <div class="mb-3 mb-md-5">
