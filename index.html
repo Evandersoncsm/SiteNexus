@@ -97,17 +97,22 @@
           font-size: 1.4rem !important;
         }
 
-        /* Ajuste para ícones de serviço ficarem em linha e com rolagem horizontal */
+        /* 
+          Removido o redimensionamento do botão “Saiba mais” e do 
+          botão do formulário para manter o mesmo tamanho do desktop no mobile 
+        */
+
+        /* Ajuste para exibir TODOS os 4 ícones de serviço numa única linha e deixá-los mais próximos e à esquerda no mobile */
         .nav.flex-row.flex-md-column.nav-tab {
           flex-direction: row !important;
           flex-wrap: nowrap !important;
           overflow-x: auto; /* permite rolagem horizontal no mobile */
-          justify-content: flex-start !important;
+          justify-content: flex-start !important; /* Alinhados à esquerda */
           align-items: flex-start !important;
         }
         .nav.flex-row.flex-md-column.nav-tab .nav-link {
           flex: 0 0 auto;
-          margin-right: 5px; /* Espaçamento reduzido entre os botões */
+          margin-right: 3px; /* Espaçamento ainda menor entre os botões */
         }
 
         /* Ajuste de imagens de ícones em "Melhores Serviços" */
@@ -129,34 +134,6 @@
         /* Pequenos ajustes em cards do Blog para não ficar muito apertado */
         .card.p-3.h-100.card-soft-primary {
           padding: 1rem !important;
-        }
-      }
-
-      /* Ajustes de responsividade para telas ainda menores que 576px */
-      @media (max-width: 576px) {
-        /* Menor ainda para títulos */
-        .display-2 {
-          font-size: 1.7rem !important;
-          line-height: 1.2;
-        }
-        .fs-2 {
-          font-size: 1rem !important;
-        }
-
-        /* Diminui margens do form no topo */
-        .hero-header-form {
-          margin-top: 1.5rem;
-        }
-
-        /* Ajuste de logos e imagens de parceiros se estiverem muito grandes */
-        .row.align-items-center img {
-          max-width: 80%;
-          height: auto;
-        }
-
-        /* Card Blog: Ajuste de margem/padding */
-        .card.p-3.h-100.card-soft-primary {
-          padding: 0.8rem !important;
         }
       }
     </style>
@@ -330,13 +307,13 @@
                           Escolha uma categoria
                         </option>
                         <option value="Implantação de ERP">Implantação de ERP</option>
-                        <option value="Integração de Sistemas">
-                          Integração de Sistemas
-                        </option>
+                        <option value="Integração de Sistemas"
+                          >Integração de Sistemas</option
+                        >
                         <option value="Automações">Automações</option>
-                        <option value="Desenvolvimento de Software">
-                          Desenvolvimento de Software
-                        </option>
+                        <option value="Desenvolvimento de Software"
+                          >Desenvolvimento de Software</option
+                        >
                       </select>
                       <label for="floatingCategory">Categoria de serviço</label>
                     </div>
