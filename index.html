@@ -97,22 +97,12 @@
           font-size: 1.4rem !important;
         }
 
-        /* Botões e links menores para caber melhor */
-        .btn-ensurance {
-          font-size: 0.875rem !important;
-          padding: 0.75rem 1rem;
-        }
-        .hero-header-form form button {
-          padding: 0.75rem 1rem;
-          font-size: 0.875rem;
-        }
-
-        /* Ajuste para exibir TODOS os 4 ícones de serviço numa única linha e deixá-los mais próximos e à esquerda no mobile */
+        /* Ajuste para ícones de serviço ficarem em linha e com rolagem horizontal */
         .nav.flex-row.flex-md-column.nav-tab {
           flex-direction: row !important;
           flex-wrap: nowrap !important;
           overflow-x: auto; /* permite rolagem horizontal no mobile */
-          justify-content: flex-start !important; /* Alinhados à esquerda */
+          justify-content: flex-start !important;
           align-items: flex-start !important;
         }
         .nav.flex-row.flex-md-column.nav-tab .nav-link {
@@ -139,6 +129,34 @@
         /* Pequenos ajustes em cards do Blog para não ficar muito apertado */
         .card.p-3.h-100.card-soft-primary {
           padding: 1rem !important;
+        }
+      }
+
+      /* Ajustes de responsividade para telas ainda menores que 576px */
+      @media (max-width: 576px) {
+        /* Menor ainda para títulos */
+        .display-2 {
+          font-size: 1.7rem !important;
+          line-height: 1.2;
+        }
+        .fs-2 {
+          font-size: 1rem !important;
+        }
+
+        /* Diminui margens do form no topo */
+        .hero-header-form {
+          margin-top: 1.5rem;
+        }
+
+        /* Ajuste de logos e imagens de parceiros se estiverem muito grandes */
+        .row.align-items-center img {
+          max-width: 80%;
+          height: auto;
+        }
+
+        /* Card Blog: Ajuste de margem/padding */
+        .card.p-3.h-100.card-soft-primary {
+          padding: 0.8rem !important;
         }
       }
     </style>
@@ -312,13 +330,13 @@
                           Escolha uma categoria
                         </option>
                         <option value="Implantação de ERP">Implantação de ERP</option>
-                        <option value="Integração de Sistemas"
-                          >Integração de Sistemas</option
-                        >
+                        <option value="Integração de Sistemas">
+                          Integração de Sistemas
+                        </option>
                         <option value="Automações">Automações</option>
-                        <option value="Desenvolvimento de Software"
-                          >Desenvolvimento de Software</option
-                        >
+                        <option value="Desenvolvimento de Software">
+                          Desenvolvimento de Software
+                        </option>
                       </select>
                       <label for="floatingCategory">Categoria de serviço</label>
                     </div>
